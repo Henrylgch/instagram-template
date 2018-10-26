@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.post {
+  width: 200px;
+  display: block;
+  cursor: pointer;
+  position: relative;
+}
+
+.post-image {
+  margin: 0;
+}
+
+.post-image img {
+  width: 100%;
+}
+
+.post-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.post:hover .post-overlay {
+  display: flex;
+}
+
+.post-likes, .post-comments {
+  margin: 5px;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
