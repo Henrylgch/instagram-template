@@ -3,8 +3,15 @@ body {
   font-family: Arial;
 }
 
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 293px));
+  justify-content: center;
+  align-items: center;
+  grid-gap: 28px;
+}
+
 .post {
-  width: 200px;
   display: block;
   cursor: pointer;
   position: relative;
@@ -40,4 +47,10 @@ body {
   font-weight: bold;
   text-align: center;
   display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+  .post-list {
+    grid-gap: 3px;
+  }
 }
